@@ -1,0 +1,18 @@
+I have started at July2nd here
+
+
+3.ViewChild , Local Reference , ElementRef , Input , Output
+
+
+//Before comes to FourthBranch HTML and JS Features what we have to cover here.....
+
+4.FourthBranch   1. ngContent, 
+                 2. ngTemplate, 
+                 3. ngContainer, 
+                 4. ContentChild,
+                 5. ViewChildren, 
+                 6. ContentChildren, 
+                 7. TemplateRef
+
+
+5.FifthBranch    PageLifecycleHooks
