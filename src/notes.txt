@@ -1,8 +1,15 @@
 I have started at July2nd here
 
+FirstBranch
 
+1. Create new component and explain .html , css , .ts files Manual Component Creatioon
+
+
+SecondBranch
+2.  StringInteroplation , propertydatabinding , eventdatabinding , twowaydatabinding
+ 
+ThirdBranch
 3.ViewChild , Local Reference , ElementRef , Input , Output
-
 
 //Before comes to FourthBranch HTML and JS Features what we have to cover here.....
 
@@ -15,4 +22,16 @@ I have started at July2nd here
                  7. TemplateRef
 
 
+//interface and implements keyword
 5.FifthBranch    PageLifecycleHooks
+
+Class constructor , method
+6.Services branch
+
+
+
+8.Http
+Global Exception
+Subject
+BehaviourSubject
+Pipe
