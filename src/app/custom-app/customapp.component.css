@@ -1,0 +1,11 @@
+input{
+    background-color: yello;
+    border: 1px red solid;
+    font-family: 'Courier New', Courier, monospace;
+    width: 200px;
+    height: 100px;
+}
+
+span{
+    font-family: 'Times New Roman', Times, serif;
+}

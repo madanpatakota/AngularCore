@@ -1,0 +1,64 @@
+
+<!-- 
+Terminology:
+can we create the
+ referece to the element? -->
+
+
+<!-- HTML input element -->
+
+<input type="text" placeholder="Enter the name"
+ [value]="Name" #CustomerName/>
+
+
+
+ <button 
+ (click)="Submit(CustomerName)">
+    Click</button>
+
+
+    <br>
+    <br>
+ 
+<input type="text" 
+placeholder="Enter the Location"
+[value]="Location" 
+#CustomerLocatoin/>
+
+<span #info>Hello world</span>
+
+
+
+ <button 
+ (click)="evtSubmitLocation(
+    CustomerLocatoin,
+     info)">
+    Click</button>
+
+
+<br>
+<br>
+
+
+
+
+
+<input type="text" 
+placeholder="Enter the Designation"
+[value]="Designation" 
+#CustomerDesignation/>
+
+ <button class="btn btn-primary"
+ (click)="evtSubmitDesignation()">
+    Click</button>
+
+
+
+    
+<!-- 
+ can i create the child of this
+  view in the ts file ? -->
+<!-- 
+
+1.  i wish i want to create the
+local ref in the .ts file -->

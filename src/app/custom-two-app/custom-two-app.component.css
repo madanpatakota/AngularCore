@@ -1,0 +1,23 @@
+/* input{
+    background-color: yellow;
+    border: 3px  red solid;
+}
+
+button{
+    background-color: blue;
+}
+
+select{
+    width:200px
+} */
+  /* ctrl k+c */
+
+  .testCSS{
+    background-color: yellow;
+    border: 2px solid aqua;
+    width:100px;
+    height: 70px;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    margin:50px;
+}

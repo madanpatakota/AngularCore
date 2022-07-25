@@ -1,0 +1,192 @@
+Angular application is working.....
+
+<!-- 
+<input type="text" 
+       value="Something"  /> -->
+
+<!-- [______]
+{{________}} 
+( )-->
+
+<div style="background-color: cadetblue">
+  <input type="text" value="Something" />
+  <input type="checkbox" />
+  <input type="radio" />
+  <input type="text" value="angular" />
+</div>
+
+<input type="text" [value]="Name" />
+<input [type]="controlValue" />
+
+<button (click)="alert()">Show alert</button>
+
+<input type="checkbox" />
+<select (change)="showLog(); alert()">
+  <option value="1">HSRlayout</option>
+  <option value="2">SilkBoard</option>
+</select>
+<!-- 
+
+basic application
+ng new ____
+ng s ______
+application flow -->
+theory ---> app.component.html ---> modifiled i see the output in the browser
+--> Techincal
+
+{{ Name }} -- {{ CustomerId }}
+
+{{ getLocationName() }}
+
+{{ 1 + 2 + 43 + 4 }}
+
+<!-- component is nothing but a html+css+ts -->
+
+<hr />
+<hr />
+<hr />
+<span></span>
+
+<!-- 3 hours -->
+
+<!-- earlier : appcomponent has created and registed and utilized in index.html -->
+
+<!-- now i have careated the my own component LIke created , registered(appmodule) , utlized(appcompenent.html)  -->
+
+<app-custom-location></app-custom-location>
+
+<!-- now crete the register and then utilize -->
+
+<br />
+<hr />
+<!-- 
+Q) Can i take the property databinding and event databinding 
+
+to the same control?
+
+Textbox can i apply property datbibding and event databidig -->
+
+<!-- its tracing the keyboard event -->
+
+<!-- keyup keydown keypress -->
+
+<!-- mousescroll mouseup mousedown -->
+<!-- 
+click 
+
+dropdwon change -->
+
+<input type="text" [value]="Name" (keydown)="monitorKeys($event)" />
+{{ Name }}
+
+<!-- value + keydown -->
+
+==================================
+<hr />
+
+<!-- Q) whenever i am going to change the ngModel
+can i trace the value -->
+
+<!-- 
+     ()     ========> one way (event) databinding
+
+[()] property + event -->
+
+<!-- ngmodel + ngmodelchange -->
+
+<!-- 
+[(ngModel)] -->
+
+<!-- Angular Forms -->
+
+<input
+  type="text"
+  [ngModel]="Location"
+  (ngModelChange)="modelChanges($event)"
+/>
+
+{{ Location }}
+
+<input type="text" [(ngModel)]="Employee" />
+{{ Employee }}
+
+<hr />
+
+<input type="text" style="background-color: red" />
+
+<br />
+<input
+  type="text"
+  [ngStyle]="{
+    'background-color': CustomerType == 'perminent' ? 'yellow' : '',
+    border: Area == 'hyderabad' ? '10px solid aqua' : ''
+  }"
+/>
+
+==============================================================================
+
+<!-- 
+<label class="testCSS"></label> -->
+
+<!-- testCSS -->
+
+<!-- {{pincode}} -->
+
+<br />
+<br />
+<br />
+
+<!-- Q) can i apply ngstyle and ngclass to the single html -->
+<!-- A : yes -->
+<!-- 1.task -->
+<label [ngClass]="pincode == '560034' ? 'testCSS' : ''">
+  My area code is 560034
+</label>
+
+<br />
+<br />
+
+<input
+  type="text"
+  [value]="CustomerType"
+  [ngStyle]="{
+    visibility: CustomerType == 'perminent' ? 'visible' : 'hidden'
+  }"
+/>
+
+
+
+<div *ngIf="CustomerType == 'temp'">I am in online</div>
+
+<!-- *ngFor -->
+
+<ul>
+       <li>Hyderabad</li>
+       <li>Bangolore</li>
+       <li>Chennai</li>
+</ul>
+
+
+<!-- *ngFor -->
+
+<!-- 1. whenever you are loopiing  -->
+<!-- 2. when looping its symbol of the cuurent value -->
+<ul style="border:1px solid red">
+  <li *ngFor="let location of Locatoions">
+    {{ location }}
+  </li>
+</ul>
+
+
+<br>
+
+<ul style="border:1px solid red">
+       <li *ngFor="let digit of ['one','two','three']">
+         {{ digit }}
+       </li>
+     </ul>
+
+<br />
+<br />
+<br />
+<br />

@@ -1,0 +1,27 @@
+<!--   
+<address>
+  Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br> 
+  Visit us at:<br>F
+  Example.com<br>
+  Box 564, Disneyland<br>
+  USA
+  </address> -->
+  <!-- fs means fontsize -->
+<div class="bg-ligt" style="padding-left: 200px;padding-right: 100px;margin-top: 25px;">
+  <p class="text-success text-capitalize fs-5">Email is : {{ ICForm.Email }}</p>
+  <p class="text-success text-capitalize fs-5">Password is : {{ ICForm.City }}</p>
+  <p class="text-success text-capitalize fs-5">Address is : {{ ICForm.Address }}</p>
+  <p class="text-success text-capitalize fs-5">
+    Address 2 is : {{ ICForm.Password }}
+  </p>
+  <p class="text-success text-capitalize fs-5">City is : {{ ICForm.SecondAddress }}</p>
+  <p class="text-success text-capitalize fs-5">State is : {{ ICForm.State }}</p>
+  <p class="text-success text-capitalize fs-5">
+    Zip is : {{ ICForm.ZipCode }}
+  </p>
+  <div>
+    <button class="btn btn-warning" (click)="evtFeedBack()">Feedback</button>
+  </div>
+</div>
+
+

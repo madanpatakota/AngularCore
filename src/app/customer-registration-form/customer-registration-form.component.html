@@ -1,0 +1,86 @@
+<div style="margin-top: 20px; padding-left: 200px; padding-right: 200px">
+  <form class="row g-3">
+    <div class="col-md-6">
+      <label for="inputEmail4" class="form-label">Email</label>
+      <input type="email" class="my-form-control" id="inputEmail4" #email />
+    </div>
+    <div class="col-md-6">
+      <label for="inputPassword4" class="form-label">Password</label>
+      <input
+        type="password"
+        class="form-control"
+        id="inputPassword4"
+        #password
+      />
+    </div>
+    <div class="col-12">
+      <label for="inputAddress" class="form-label">Address</label>
+      <input
+        type="text"
+        class="form-control"
+        id="inputAddress"
+        placeholder="1234 Main St"
+        #address
+      />
+    </div>
+    <div class="col-12">
+      <label for="inputAddress2" class="form-label">Address 2</label>
+      <input
+        type="text"
+        class="form-control"
+        id="inputAddress2"
+        placeholder="Apartment, studio, or floor"
+        #secondAddress
+      />
+    </div>
+    <div class="col-md-6">
+      <label for="inputCity" class="form-label">City</label>
+      <input type="text" class="form-control" id="inputCity" #city />
+    </div>
+    <div class="col-md-4">
+      <label for="inputState" class="form-label">State</label>
+      <select id="inputState" class="form-select" #state>
+        <option *ngFor="let state of statesList" [value]="state.Id">
+          {{ state.Name }}
+        </option>
+      </select>
+    </div>
+    <div class="col-md-2">
+      <label for="inputZip" class="form-label">Zip</label>
+      <input type="text" class="form-control" id="inputZip" #zipcode />
+    </div>
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck" />
+        <label class="form-check-label" for="gridCheck"> Check me out </label>
+      </div>
+    </div>
+    <div class="col-12">
+      <button type="submit" (click)="Submit()" class="btn btn-primary">
+        Sign in
+      </button>
+    </div>
+  </form>
+<br>
+  <div>Feedback from the Customer details</div>
+  <p><strong>Email Feedback is :</strong> {{ receivedFeedbackInfo.EmailFeedback }}</p>
+  <hr />
+</div>
+
+<!-- <input [type]="text" /> -->
+
+<!-- <input type="" -->
+
+<!-- () -->
+<!-- $event which represents the feedbackInformation -->
+
+<app-customer-details
+  [test]="'SampleTestData'"
+  [registrionFormData]="CustomerForm"
+  (evtFeedbackInformation)="receivedFeedbackData($event)"
+>
+</app-customer-details>
+
+<!-- <human-body [head] 
+    [body] [foot] 
+    /></human-body> -->
