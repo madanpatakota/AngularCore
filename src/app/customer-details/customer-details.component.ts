@@ -22,21 +22,20 @@ export class CustomerDetailsComponent implements OnInit , OnChanges {
   // 2. how you have to give the feedbackinformation object
   // to the output decarator value
 
-
-
-
-  
-
   ICForm:any = {};
-
   constructor() { }
+
+  ICForms:any = [];
 
   //
 
+  //It will be handle the input changes
+  //when ever input property changes it will be load
   ngOnChanges(changes: SimpleChanges): void {
     this.ICForm = this._customerForm
 
     console.log(this.ICForm);
+    this.ICForms.push(this.ICForm);
   }
 
 

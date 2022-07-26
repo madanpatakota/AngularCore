@@ -6,8 +6,8 @@
   Box 564, Disneyland<br>
   USA
   </address> -->
-  <!-- fs means fontsize -->
-<div class="bg-ligt" style="padding-left: 200px;padding-right: 100px;margin-top: 25px;">
+<!-- fs means fontsize -->
+<!-- <div class="bg-ligt" style="padding-left: 200px;padding-right: 100px;margin-top: 25px;">
   <p class="text-success text-capitalize fs-5">Email is : {{ ICForm.Email }}</p>
   <p class="text-success text-capitalize fs-5">Password is : {{ ICForm.City }}</p>
   <p class="text-success text-capitalize fs-5">Address is : {{ ICForm.Address }}</p>
@@ -22,6 +22,33 @@
   <div>
     <button class="btn btn-warning" (click)="evtFeedBack()">Feedback</button>
   </div>
-</div>
+</div> -->
 
+<table>
+  <!-- Header Section -->
+  <thead> 
+    <!-- Header Row -->
+    <tr>  
+      <!-- Each th Cell -->
+      <th>Email</th>
+      <th>City</th>
+      <th>Address</th>
+      <th>Second Address</th>
+      <th>State</th>
+      <th>Zip Code</th>
+    </tr>
+  </thead>
+  <!-- body Section -->
+  <tbody>
+    <!-- Rows Section -->
 
+    <tr *ngFor="let item of ICForms">
+      <td>{{item.Email}}</td>
+      <td>{{item.City}}</td>
+      <td>{{item.Address}}</td>
+      <td>{{item.SecondAddress}}</td>
+      <td>{{item.State}}</td>
+      <td>{{item.ZipCode}}</td>
+    </tr>
+  </tbody>
+</table>
