@@ -24,7 +24,7 @@
   </div>
 </div> -->
 
-<table>
+<table class="table table-stripped table-dark table-hover">
   <!-- Header Section -->
   <thead> 
     <!-- Header Row -->
@@ -41,14 +41,13 @@
   <!-- body Section -->
   <tbody>
     <!-- Rows Section -->
-
     <tr *ngFor="let item of ICForms">
-      <td>{{item.Email}}</td>
-      <td>{{item.City}}</td>
-      <td>{{item.Address}}</td>
-      <td>{{item.SecondAddress}}</td>
-      <td>{{item.State}}</td>
-      <td>{{item.ZipCode}}</td>
+      <td>{{item?.Email}}</td>
+      <td>{{item?.City}}</td>
+      <td>{{item?.Address}}</td>
+      <td>{{item?.SecondAddress}}</td>
+      <td>{{item?.State}}</td>
+      <td>{{item?.ZipCode}}</td>
     </tr>
   </tbody>
 </table>

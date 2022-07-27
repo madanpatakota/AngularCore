@@ -14,6 +14,16 @@ export class CustomerDetailsComponent implements OnInit , OnChanges {
   @Input('test') _test:any;
   @Input('registrionFormData') _customerForm:any;
 
+
+  @Input('registrionFormData') set InputCustomerForm(value:any){
+    if(value.Email == ""){
+        value.Email = "No value";
+    }
+    this._customerForm = value;
+  }
+ 
+
+
   @Output('evtFeedbackInformation') Information = new EventEmitter<any>();
   //this.feedbackInformation.emit(this.feedbackInformation);
 
@@ -23,19 +33,25 @@ export class CustomerDetailsComponent implements OnInit , OnChanges {
   // to the output decarator value
 
   ICForm:any = {};
+
+
+  
+
   constructor() { }
 
-  ICForms:any = [];
+  
 
   //
 
   //It will be handle the input changes
   //when ever input property changes it will be load
+  ICForms:any = [];
   ngOnChanges(changes: SimpleChanges): void {
-    this.ICForm = this._customerForm
-
-    console.log(this.ICForm);
-    this.ICForms.push(this.ICForm);
+    //this.ICForm = this._customerForm
+    
+    console.log(this._customerForm);
+    this.ICForms?.push(this._customerForm);
+    //console.log(this.ICForms);
   }
 
 

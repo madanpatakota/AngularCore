@@ -48,6 +48,7 @@ export class CustomerRegistrationFormComponent implements OnInit {
   receivedFeedbackInfo:any = {};
 
 
+  isSubmitted =false;
   Submit(){
     this.sEmail  = this.vEmail?.nativeElement.value;
     this.sPassword  = this.vPassword?.nativeElement.value;
@@ -67,6 +68,7 @@ export class CustomerRegistrationFormComponent implements OnInit {
        'City' : this.sCity,
        'ZipCode' : this.sZipCode
     }
+    this.isSubmitted = true
   }
 
 

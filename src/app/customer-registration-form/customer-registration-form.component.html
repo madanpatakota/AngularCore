@@ -74,7 +74,7 @@
 <!-- () -->
 <!-- $event which represents the feedbackInformation -->
 
-<app-customer-details
+<app-customer-details *ngIf="isSubmitted"
   [test]="'SampleTestData'"
   [registrionFormData]="CustomerForm"
   (evtFeedbackInformation)="receivedFeedbackData($event)"
